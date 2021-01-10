@@ -60,5 +60,5 @@ Cliquez ensuite sur **`Predict`** et vous devrez voir la prédiction True ou Fal
 
 ## Liens utiles
 
-Repository : https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset
+Repository : https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset  
 Article source : https://link.springer.com/article/10.1007%2Fs00521-018-3523-0
