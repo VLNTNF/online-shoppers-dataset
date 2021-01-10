@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ML API</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='fonts/material-design-iconic-font/css/material-design-iconic-font.min.css')}}">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+	</head>
+
+	<!--<body background="{{ url_for('static', filename='images/bg-registration-form-6.jpg')}}" background-size= alt="euuh">-->
+	<body style="background: url(/static/images/bg-registration-form-6.jpg) center / cover no-repeat ;">
+
+
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="{{ url_for('static', filename='images/registration-form-6.jpg')}}" alt="">
+				</div>
+				<form action="/predict" method="post">
+					<h3><FONT color="#4B0082">Online Shoppers Purchasing Intention</FONT></h3>
+					<div class="form-row">
+						<input type="number" class="form-control" name="administrative" placeholder="Administrative" required="required" min="0" />
+						<input type="number" class="form-control" name="administrative_Duration" placeholder="Administrative_Duration" required="required" min="0" step="0.000000000000000001" />
+					</div>
+					<div class="form-row">
+						<input type="number" class="form-control" name="informational" placeholder="Informational" required="required" min="0" />
+						<input type="number" class="form-control" name="informational_Duration" placeholder="Informational_Duration" required="required" min="0" step="0.000000000000000001" />
+					</div>
+					<div class="form-row">
+						<input type="number" class="form-control" name="productRelated" placeholder="ProductRelated" required="required" min="0" />
+						<input type="number" class="form-control" name="productRelated_Duration" placeholder="ProductRelated_Duration" required="required" min="0" step="0.000000000000000001" />
+					</div>
+					<div class="form-row">
+						<input type="number" class="form-control" name="bounceRates" placeholder="BounceRates" required="required" min="0", step="0.000000000000000001" />
+						<input type="number" class="form-control" name="exitRates" placeholder="ExitRates" required="required" min="0", step="0.000000000000000001" />
+					</div>
+					<div class="form-row">
+						<input type="number" class="form-control" name="pageValues" placeholder="PageValues" required="required" min="0", step="0.000000000000000001" />
+						<input type="number" class="form-control" name="specialDay" placeholder="SpecialDay" required="required" min="0", step="0.000000000000000001" />
+					</div>
+					<div class="form-row">
+						<div class="form-holder">
+							<select required="True" name="month" id="month" class="form-control">
+								<option value="" disabled selected>Month</option>
+								<option value="Feb">February</option>
+								<option value="Mar">March</option>
+								<option value="May">May</option>
+								<option value="Jun">June</option>
+								<option value="Jul">July</option>
+								<option value="Aug">August</option>
+								<option value="Sep">September</option>
+								<option value="Oct">October</option>
+								<option value="Nov">November</option>
+								<option value="Dec">December</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+						<div class="form-holder">
+							<select required="True" name="operatingSystems" id="operatingSystems" class="form-control">
+								<option value="" disabled selected>OperatingSystems</option>
+								<option value=1>Operating Systems 1</option>
+								<option value=2>Operating Systems 2</option>
+								<option value=3>Operating Systems 3</option>
+								<option value=4>Operating Systems 4</option>
+								<option value=5>Operating Systems 5</option>
+								<option value=6>Operating Systems 6</option>
+								<option value=7>Operating Systems 7</option>
+								<option value=8>Operating Systems 8</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-holder">
+							<select required="True" name="browser" id="browser" class="form-control">
+								<option value="" disabled selected>Browser</option>
+								<option value=1>Browser 1</option>
+								<option value=2>Browser 2</option>
+								<option value=3>Browser 3</option>
+								<option value=4>Browser 4</option>
+								<option value=5>Browser 5</option>
+								<option value=6>Browser 6</option>
+								<option value=7>Browser 7</option>
+								<option value=8>Browser 8</option>
+								<option value=9>Browser 9</option>
+								<option value=10>Browser 10</option>
+								<option value=11>Browser 11</option>
+								<option value=12>Browser 12</option>
+								<option value=13>Browser 13</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+						<div class="form-holder">
+							<select required="True" name="region" id="region" class="form-control">
+								<option value="" disabled selected>Region</option>
+								<option value=1>Region 1</option>
+								<option value=2>Region 2</option>
+								<option value=3>Region 3</option>
+								<option value=4>Region 4</option>
+								<option value=5>Region 5</option>
+								<option value=6>Region 6</option>
+								<option value=7>Region 7</option>
+								<option value=8>Region 8</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-holder">
+							<select required="True" name="trafficType" id="trafficType" class="form-control">
+								<option value="" disabled selected>TrafficType</option>
+								<option value=1>TrafficType 1</option>
+								<option value=2>TrafficType 2</option>
+								<option value=3>TrafficType 3</option>
+								<option value=4>TrafficType 4</option>
+								<option value=5>TrafficType 5</option>
+								<option value=6>TrafficType 6</option>
+								<option value=7>TrafficType 7</option>
+								<option value=8>TrafficType 8</option>
+								<option value=9>TrafficType 9</option>
+								<option value=10>TrafficType 10</option>
+								<option value=11>TrafficType 11</option>
+								<option value=12>TrafficType 12</option>
+								<option value=13>TrafficType 13</option>
+								<option value=14>TrafficType 14</option>
+								<option value=15>TrafficType 15</option>
+								<option value=16>TrafficType 16</option>
+								<option value=17>TrafficType 17</option>
+								<option value=18>TrafficType 18</option>
+								<option value=19>TrafficType 19</option>
+								<option value=20>TrafficType 20</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+						<div class="form-holder">
+							<select required="True" name="visitorType" id="visitorType" class="form-control">
+								<option value="" disabled selected>VisitorType</option>
+								<option value="Returning_Visitor">Returning_Visitor</option>
+								<option value="New_Visitor">New_Visitor</option>
+								<option value="Other">Other</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-holder">
+							<select required="True" name="weekend" id="weekend" class="form-control">
+								<option value="" disabled selected>Weekend</option>
+								<option value=True>True</option>
+								<option value=False>False</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<div>
+							<i><label>Prediction:</label></i>
+							<FONT size="10pt" color="#EA4C89" face="arial"> {{prediction_text}} </FONT>
+						</div>
+					</div>
+					
+					<button>Predict
+						<i class="zmdi zmdi-long-arrow-right"></i>
+					</button>
+				</form>
+				
+			</div>
+		</div>
+
+		<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
