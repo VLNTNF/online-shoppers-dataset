@@ -16,7 +16,9 @@ Vous devez avoir **Scikit Learn** _(pour le model de machine learning)_, **Panda
 
 Ce projet comprend quatre grandes parties:
 
-- **Online_Shoppers_Dataset.ipynb** - Il contient tout le code python depuis l'analyse des données, passant par l'essai de plusieurs modèles d'apprentissage automatique pour prédire les intentions des acheteurs en ligne sur les données du fichier online_shoppers_intention.csv, jusqu'à la sélection et la sauvegarde du meilleur modèle.
+- **Online_Shoppers_Dataset.ipynb** - Il contient tout le code python depuis l'analyse des données, passant par l'essai de plusieurs modèles d'apprentissage automatique pour prédire les intentions des acheteurs en ligne sur les données du fichier online_shoppers_intention.csv, jusqu'à la sélection et la sauvegarde du meilleur modèle.  
+   
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VLNTNF/online-shoppers-dataset/blob/main/Online_Shoppers_Dataset.ipynb)
 
 - **app.py** - Il contient l'API Flask qui reçoit les détails des visiteurs du site d'e-commerce via internet et un navigateur, et prédit si le visiteur aura l'intention de faire un achat ou pas.
 
