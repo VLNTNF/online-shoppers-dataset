@@ -47,15 +47,15 @@ Par défaut, flask fonctionnera sur le **port 5000**.
 
 5. Accédez à l'URL **`http://localhost:5000`**
 
-![index](https://raw.githubusercontent.com/VLNTNF/online-shoppers-dataset/main/WATCHme/flask_API_1.png)
+<p align="center"><img  src="https://raw.githubusercontent.com/VLNTNF/online-shoppers-dataset/main/WATCHme/flask_API_1.png" width="70%"></p>
 
 Entrez ou sélectionnez les valeurs appropriées dans chaque entrée du formulaire.
 
-![remplissage du formulaire](https://raw.githubusercontent.com/VLNTNF/online-shoppers-dataset/main/WATCHme/flask_API_2.png)
+<p align="center"><img  src="https://raw.githubusercontent.com/VLNTNF/online-shoppers-dataset/main/WATCHme/flask_API_2.png" width="70%"></p>
 
 Cliquez ensuite sur **`Predict`** et vous devrez voir la prédiction True ou False exprimant signifiant l'intention du visiteur d'effectuer un achat ou pas.
 
-![résultat de la prédiction](https://raw.githubusercontent.com/VLNTNF/online-shoppers-dataset/main/WATCHme/flask_API_3.png)
+<p align="center"><img  src="https://raw.githubusercontent.com/VLNTNF/online-shoppers-dataset/main/WATCHme/flask_API_3.png" width="70%"></p>
 
 
 ## Liens utiles
