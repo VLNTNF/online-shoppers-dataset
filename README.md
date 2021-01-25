@@ -1,8 +1,8 @@
-# Déployement du modèle ML avec Flask
+# Déploiement du modèle ML avec Flask
 
 ![model_API](https://raw.githubusercontent.com/VLNTNF/online-shoppers-dataset/main/WATCHme/flask_API_1.png)
 
-Déployement du modèle Machine Learning pour la prédition des intention des acheteurs en ligne sur un site de e-commerce.
+Déploiement du modèle Machine Learning pour la prédition des intention des acheteurs en ligne sur un site de e-commerce.
 
 
 ## Pré-réquis
